@@ -11,7 +11,7 @@ from .getters import polarity_getter
 class PolarityModel:
     def __init__(self, nlp: Optional[Language] = None):
         if nlp is None:
-            self.nlp = spacy.load("da_core_news_lg")
+            self.nlp = spacy.load("da_core_news_lg-3.0.0")
         Doc.set_extension("polarity", getter=polarity_getter, force=True)
 
     def __call__(self, text: str) -> dict:
