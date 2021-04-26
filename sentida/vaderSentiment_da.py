@@ -177,7 +177,7 @@ class SentimentIntensityAnalyzer(object):
         if lexicon is None:
             lexicon_file = "sentidav2_lemmas.csv"
             lexicon_full_filepath = os.path.join(os.path.dirname(_this_module_file_path_), lexicon_file)
-            df = pd.read_csv(lexicon_full_filepath, encoding='ISO-8859-1')
+            df = pd.read_csv(lexicon_full_filepath, encoding='utf-8')
             self.lexicon = df.set_index("word")[ 'score'].to_dict()
         else:
             self.lexicon = lexicon
