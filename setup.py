@@ -11,7 +11,6 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     author="Jacob Aarup Dalsgaard, Gustav Aarup Lauridsen, Lars Kjartan Bacher Svendsen and Kenneth Enevoldsen",
-    author_email="kennethcenevoldsen@gmail.com",
     url="https://github.com/Guscode/Sentida2",
     packages=setuptools.find_packages(),
     include_package_data=True,
