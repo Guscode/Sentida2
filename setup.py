@@ -14,6 +14,7 @@ setuptools.setup(
     url="https://github.com/Guscode/Sentida2",
     packages=setuptools.find_packages(),
     include_package_data=True,
+    package_data = {"sentida":['emoji_utf8_lexicon.txt', 'sentidav2_lemmas.csv'],},
     # external packages as dependencies
     install_requires=["spacy", "pandas"],
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
