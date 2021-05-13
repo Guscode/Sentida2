@@ -70,6 +70,7 @@ INTENSIFIER_DICT = {
     "væsentlig": B_INCR,
     "total": B_INCR,
     "uber": B_INCR,
+    "virkelig": B_INCR,
     "temmelig": 0.1,
     "megen": 0.2,
     "mega": 0.4,

@@ -78,7 +78,7 @@ def test_span_polarity():
 
     sents = list(filter(lambda x: x, [sent for e in EXAMPLES for sent in nlp(e).sents]))
 
-    assert sents[0]._.polarity["compound"] > 0
-    assert sents[1]._.polarity["compound"] > sents[0]._.polarity["compound"]
-    assert sents[2]._.polarity["compound"] < 0
-    assert sents[8]._.polarity["compound"] < sents[9]._.polarity["compound"]
+    assert sents[0]._.polarity.compound > 0
+    assert sents[1]._.polarity.compound > sents[0]._.polarity.compound
+    assert sents[2]._.polarity.compound < 0
+    assert sents[8]._.polarity.compound < sents[9]._.polarity.compound
